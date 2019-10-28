@@ -33,6 +33,15 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.query-block {
+    background-color: rgba(70, 71, 71, 0.705);
+    color: #e9e9e9;
+    font: 16pt "Roboto Slab";
+    padding-top: 50px;
+    padding-bottom: 50px;
+    object-position: center;
+}
+
 #footerId {
     background-color: rgba(39, 39, 39, 0.89);
     color: #e9e9e9;
@@ -58,6 +67,40 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+.service {
+    border: 1px solid #FFF;
+    align-items: center;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+}
+.service i {
+    margin: 10px;
+    font-size: 80px;
+    align-items: center;
+    justify-content: center;
+    color: #e9e9e9;
+
+}
+.service p {
+    font-weight: 100;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+.service a {
+    color: inherit;
+    text-align: center;
+}
+.service:hover {
+    background-color: #000000;
+}
+.service-container {
+
+    padding: 10px;
+}
+
 
 .title {
     background-image: url('../img/background.jpg');
