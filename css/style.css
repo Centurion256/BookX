@@ -1,0 +1,76 @@
+body {
+    font-family: "Roboto Slab";
+}
+h1 {
+
+    font-size: 80pt;
+
+}
+#formstyle1 {
+    background-color: rgba(70, 71, 71, 0.705);
+    color: #e9e9e9;
+    font: 16pt "Roboto Slab";
+}
+
+#titlestyle1 {
+    background-color: rgba(1, 82, 1, 0.89);
+    color: #e9e9e9;
+    font-size: 25pt;
+    font-family: "Roboto Slab"; 
+}
+
+#pagestyle1 {
+    background-color: rgba(1, 82, 1, 0.89);
+    color: #e9e9e9;
+    /*font: 20pt "Roboto Slab"*/;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+#pagestyle2 {
+    background-color: rgba(87, 9, 48, 0.89);
+    color: #e9e9e9;
+    font-size: 20pt;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footerId {
+    background-color: rgba(39, 39, 39, 0.89);
+    color: #e9e9e9;
+    font: 12pt sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+}
+
+.center_div {
+    margin: 0 auto;
+    width:40%; /* value of your choice which suits your alignment */
+}
+
+.center_button_old {
+    
+    margin: 0 auto;
+    text-align: center;
+    /*display: table;*/
+}
+.center_button {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height:950px;
+    color: #fff;
+    padding-top:230px;
+}
+::placeholder {
+
+    color: white !important;
+    opacity: 1;
+}
