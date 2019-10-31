@@ -13,7 +13,7 @@
     <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
 
     <link rel="stylesheet" href="css/style.css">
-
+    
   </head>
   <body>
       
@@ -23,11 +23,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <!--<div class="mx-auto order-0">-->
       <div class="container-fluid">
       <!--<div class="navbar-header">-->
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">BookX</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
           aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -40,14 +40,16 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#About">About</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="#">Action 1</a>
-              <a class="dropdown-item" href="#">Action 2</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Share</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Find</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log in</a>
           </li>
         </ul>
 
@@ -64,24 +66,55 @@
     <div class="header" id="titlestyle1">
         <div class="title text-center">
             <div class="title-text">
-                 <h1>The Meta <!--manager--></h1>
+                 <h1>BookX <!--manager--></h1>
                  <!--<div class="title-divider-line"></div>-->
                  <br></br>
-                 <p>All your managing and more in one place.</p>        
+                 <p>The way to share books.</p>        
             </div>
         </div>
         </div>
         
     </div>
-    
-    <div class="container-fluid text-center" id="pagestyle2">
+
+      <div class="query-block">
+        
+          <div class="row">
+            <div class="service col-sm-5">
+              <a href="/share">
+                  <div class="service-container">
+                    <i class="fa fa-share" aria-hidden="true"></i>
+                    <h2>Share a book</h2>
+                  </div>
+              </a>
+            </div>
+            <div class="service col-sm-5">
+              <a href="/find">
+                  <div class="service-container">
+                    <i class="fas fa-search    "></i>
+                    <h2>Find a book</h2>
+                  </div>
+              </a>
+            </div>
+          </div>
+
+      </div>
+
+    <div class="container-fluid text-center" id="About">
+            
+            
+      <h2>About the project</h2>
+      <br></br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+    <div class="container-fluid text-center" id="pagestyle3">
             
             
             <h2>Let's get down to business then, shall we?</h2>
             <br></br>
             <p>Please fill in the form below:</p>
     </div>
-    <div id="pagestyle2" class="container-fluid clearfix">
+    <div id="pagestyle3" class="container-fluid clearfix">
     <form action="/db" method="post">
         <div class="form-group center_div col-md-4">
           <label for="first_name"></label>
